@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <EditText
+        android:id="@+id/tb_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="column_name"
+        android:textSize="10dp"></EditText>
+
+    <Spinner
+        android:id="@+id/s_type"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"></Spinner>
+
+
+    <EditText
+        android:id="@+id/et_size"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="10dp"/>
+
+    <Spinner
+        android:id="@+id/s_key"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"></Spinner>
+
+    <CheckBox
+        android:id="@+id/cb_nullable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nullable"
+        android:textSize="10dp"></CheckBox>
+
+    <EditText
+        android:id="@+id/tb_default_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="default value"
+        android:textSize="10dp"></EditText>
+
+</LinearLayout>
