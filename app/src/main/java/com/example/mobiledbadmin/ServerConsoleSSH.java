@@ -31,6 +31,8 @@ public class ServerConsoleSSH extends AppCompatActivity {
         et = (EditText) findViewById(R.id.tb_comand);
         console = (TextView) findViewById(R.id.tv_console);
 
+        console.setText(Connection.Output);
+
         ((Button)findViewById(R.id.btn_enter)).setOnClickListener(view -> {
             try {
                 Connection.sendCommand(et.getText().toString());

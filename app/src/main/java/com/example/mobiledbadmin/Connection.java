@@ -5,11 +5,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.net.InetAddress;
 import java.net.Socket;
 
 class Connection  {
 
-    public static String host = "your.server.ip.address";
+    public static String host = "192.168.3.74";
     public static String Output = "";
 
 
@@ -23,7 +24,7 @@ class Connection  {
 
         try {
 
-            socket = new Socket(host, 22);
+            socket = new Socket(InetAddress.getByName(host), 22);
             in = socket.getInputStream();
             out = socket.getOutputStream();
 
@@ -33,7 +34,7 @@ class Connection  {
             return socket.isConnected();
 
         } catch (IOException e) {
-            //e.printStackTrace();
+            e.printStackTrace();
             return false;
         }
     }
