@@ -1,18 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:gravity="center"
+                android:text="App name"
+                android:textSize="34sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50sp" />
+
+            <Button
+                android:id="@+id/btn_manage_db"
+                android:layout_width="match_parent"
+                android:layout_height="75sp"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="30sp"
+                android:layout_marginBottom="10sp"
+                android:text="Manage database"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn_server_console"
+                android:layout_width="match_parent"
+                android:layout_height="75sp"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="30sp"
+                android:layout_marginBottom="10sp"
+                android:text="Server console"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75sp"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="30sp"
+                android:layout_marginBottom="10sp"
+                android:gravity="bottom|center_horizontal"
+                android:text="Connection to server"
+                android:textSize="27sp" />
+
+            <EditText
+                android:id="@+id/tb_ip_domain"
+                android:layout_width="match_parent"
+                android:layout_height="75sp"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="30sp"
+                android:layout_marginBottom="10sp"
+                android:gravity="bottom|center_horizontal"
+                android:hint="enter IP or domain"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn_connect"
+                android:layout_width="match_parent"
+                android:layout_height="75sp"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="30sp"
+                android:layout_marginBottom="10sp"
+                android:text="Try to connect"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn_safe_con_params"
+                android:layout_width="match_parent"
+                android:layout_height="75sp"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="30sp"
+                android:layout_marginBottom="10sp"
+                android:text="Safe connection params"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn_help"
+                android:layout_width="match_parent"
+                android:layout_height="75sp"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="30sp"
+                android:layout_marginBottom="10sp"
+                android:text="Help"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
